@@ -122,9 +122,13 @@ mvn javadoc:javadoc
 В конечном счете, выбор между `javadoc` и Maven зависит от размера и сложности вашего проекта, а также ваших потребностей в автоматизации и контроле. Если автоматизация является приоритетом, а проект использует Maven, использование `maven-javadoc-plugin` является предпочтительным выбором.
 
 Ссылки на репозитории
-
-
+https://github.com/slavndn/sampleproject
+https://github.com/slavndn/javadoc
+https://github.com/slavndn/maven
 
 Ссылки на опубликованную документацию на GitHub Pages.
+https://slavndn.github.io/sampleproject/
+https://slavndn.github.io/javadoc/
+https://slavndn.github.io/maven/
 
 
