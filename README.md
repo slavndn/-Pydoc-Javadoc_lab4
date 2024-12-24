@@ -2,9 +2,9 @@
 
 ## Часть 1: Документирование проекта на Python с использованием Pydoc  
 
-**Описание выбранного проекта:**  
+**Описание выбранного проекта:**   
 
-**Проект:** Игра "Угадай число" с несколькими уровнями сложности  
+**Проект:** Игра "Угадай число" с несколькими уровнями сложности   
 
 Этот проект представляет собой консольную игру "Угадай число", где игрок должен угадать число, загаданное компьютером. Игра имеет три уровня сложности, которые влияют на диапазон загаданного числа:  
 
@@ -12,7 +12,7 @@
 *   **Средний:** Число от 1 до 50.
 *   **Сложный:** Число от 1 до 100.
 
-**Пример добавленных docstring-комментариев:**
+**Пример добавленных docstring-комментариев:**  
 
 ```python
 def check_guess(guess, secret_number):
@@ -48,7 +48,7 @@ python -m pydoc -w utils
 ![image](https://github.com/user-attachments/assets/397fe741-41c9-4e43-953c-850b37b3b41b)  
 
 ## Часть 2: Java и Javadoc/Maven
-**Описание выбранного проекта**
+**Описание выбранного проекта**  
 Проект TaskManager представляет собой простое приложение для управления задачами. Основной функционал проекта заключается в хранении задач с их описаниями и статусом завершенности. Для каждой задачи можно указать описание, а также пометить задачу как завершенную.   
 Проект состоит из двух основных классов:  
 
@@ -127,14 +127,14 @@ mvn javadoc:javadoc
 
 В конечном счете, выбор между `javadoc` и Maven зависит от размера и сложности вашего проекта, а также ваших потребностей в автоматизации и контроле. Если автоматизация является приоритетом, а проект использует Maven, использование `maven-javadoc-plugin` является предпочтительным выбором.
 
-## Ссылки на репозитории
-[https://github.com/slavndn/sampleproject](https://github.com/slavndn/sampleproject)
-[https://github.com/slavndn/javadoc](https://github.com/slavndn/javadoc)
-[https://github.com/slavndn/maven](https://github.com/slavndn/maven)
+## Ссылки на репозитории  
+[https://github.com/slavndn/sampleproject](https://github.com/slavndn/sampleproject)  
+[https://github.com/slavndn/javadoc](https://github.com/slavndn/javadoc)  
+[https://github.com/slavndn/maven](https://github.com/slavndn/maven)  
 
-## Ссылки на опубликованную документацию на GitHub Pages.
-[https://slavndn.github.io/sampleproject/](https://slavndn.github.io/sampleproject)
-[https://slavndn.github.io/javadoc/](https://slavndn.github.io/javadoc/)
-[https://slavndn.github.io/maven/](https://slavndn.github.io/maven/)
+## Ссылки на опубликованную документацию на GitHub Pages.  
+[https://slavndn.github.io/sampleproject/](https://slavndn.github.io/sampleproject)  
+[https://slavndn.github.io/javadoc/](https://slavndn.github.io/javadoc/)  
+[https://slavndn.github.io/maven/](https://slavndn.github.io/maven/)  
 
 
