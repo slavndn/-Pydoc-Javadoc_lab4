@@ -74,6 +74,8 @@ public class Task {
 ```
 javadoc -d docs -sourcepath scr -subpackages TaskManager
 ```
+![image](https://github.com/user-attachments/assets/bd5edddc-f1d7-4141-b119-1a9b326eeed5)
+![image](https://github.com/user-attachments/assets/5dbc229b-2ab6-4115-a1f4-cf4a09a19b0b)
 
 
 Генерация документации с помощью Maven.
