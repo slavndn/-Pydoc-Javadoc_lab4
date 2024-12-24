@@ -1,15 +1,20 @@
-Лабораторная работа #4 - Pydoc & Javadoc
-Часть 1: Документирование проекта на Python с использованием
-Pydoc
-Описание выбранного проекта.
-Проект: Игра "Угадай число" с несколькими уровнями сложности
-Этот проект представляет собой консольную игру "Угадай число", где игрок должен угадать число, загаданное компьютером. Игра имеет три уровня сложности, которые влияют на диапазон загаданного числа:
-• Легкий: Число от 1 до 10.
-• Средний: Число от 1 до 50.
-• Сложный: Число от 1 до 100.
+# Лабораторная работа #4 - Pydoc & Javadoc
 
-Пример добавленных docstring-комментариев.
-```
+## Часть 1: Документирование проекта на Python с использованием Pydoc  
+
+**Описание выбранного проекта:**  
+
+**Проект:** Игра "Угадай число" с несколькими уровнями сложности  
+
+Этот проект представляет собой консольную игру "Угадай число", где игрок должен угадать число, загаданное компьютером. Игра имеет три уровня сложности, которые влияют на диапазон загаданного числа:  
+
+*   **Легкий:** Число от 1 до 10.
+*   **Средний:** Число от 1 до 50.
+*   **Сложный:** Число от 1 до 100.
+
+**Пример добавленных docstring-комментариев:**
+
+```python
 def check_guess(guess, secret_number):
     """Проверяет предположение пользователя относительно загаданного числа.
 
@@ -22,9 +27,9 @@ def check_guess(guess, secret_number):
 
     Returns:
         str: Сообщение о результате проверки (слишком мало, слишком много или угадал).
-    """
 ```
-Генерация документации
+
+**Генерация документации**
 ```
 python -m pydoc -w difficulty_levels
 ```
@@ -38,19 +43,20 @@ python -m pydoc -w user_interface
 python -m pydoc -w utils
 ```
 
-Опубликованная документация
-![image](https://github.com/user-attachments/assets/433940c1-7665-4d40-81bb-565970f34998)
-![image](https://github.com/user-attachments/assets/397fe741-41c9-4e43-953c-850b37b3b41b)
+**Опубликованная документация**  
+![image](https://github.com/user-attachments/assets/433940c1-7665-4d40-81bb-565970f34998)  
+![image](https://github.com/user-attachments/assets/397fe741-41c9-4e43-953c-850b37b3b41b)  
 
-Часть 2: Java и Javadoc/Maven
-Описание выбранного проекта
-Проект TaskManager представляет собой простое приложение для управления задачами. Основной функционал проекта заключается в хранении задач с их описаниями и статусом завершенности. Для каждой задачи можно указать описание, а также пометить задачу как завершенную. Проект состоит из двух основных классов:
+## Часть 2: Java и Javadoc/Maven
+**Описание выбранного проекта**
+Проект TaskManager представляет собой простое приложение для управления задачами. Основной функционал проекта заключается в хранении задач с их описаниями и статусом завершенности. Для каждой задачи можно указать описание, а также пометить задачу как завершенную.   
+Проект состоит из двух основных классов:  
 
-Task — класс, представляющий задачу. В нем содержатся данные о задаче, такие как описание и статус (завершена или нет).
-TaskManager — класс, управляющий списком задач. Он позволяет добавлять задачи и получать их список.
-Проект позволяет легко отслеживать задачи и их статус, а также предоставляет возможность для дальнейшего расширения, например, для добавления приоритетов задач или сроков выполнения.
+Task — класс, представляющий задачу. В нем содержатся данные о задаче, такие как описание и статус (завершена или нет).   
+TaskManager — класс, управляющий списком задач. Он позволяет добавлять задачи и получать их список.  
+Проект позволяет легко отслеживать задачи и их статус, а также предоставляет возможность для дальнейшего расширения, например, для добавления приоритетов задач или сроков выполнения.  
 
-Примеры добавленных Javadoc-комментариев.
+**Примеры добавленных Javadoc-комментариев.**  
 ```
 /**
  * Представляет задачу с описанием и статусом.
@@ -70,20 +76,20 @@ public class Task {
     }
 ```
 
-Генерация документации с помощью Javadoc.
+**Генерация документации с помощью Javadoc.**  
 ```
 javadoc -d docs -sourcepath scr -subpackages TaskManager
 ```
-![image](https://github.com/user-attachments/assets/bd5edddc-f1d7-4141-b119-1a9b326eeed5)
-![image](https://github.com/user-attachments/assets/5dbc229b-2ab6-4115-a1f4-cf4a09a19b0b)
+![image](https://github.com/user-attachments/assets/bd5edddc-f1d7-4141-b119-1a9b326eeed5)  
+![image](https://github.com/user-attachments/assets/5dbc229b-2ab6-4115-a1f4-cf4a09a19b0b)  
 
 
-Генерация документации с помощью Maven.
+**Генерация документации с помощью Maven.**  
 ```
 mvn javadoc:javadoc
 ```
-![image](https://github.com/user-attachments/assets/2c994260-6d06-4563-8d3e-eef461555e80)
-![image](https://github.com/user-attachments/assets/a005c746-637e-4647-932b-d56a9fcc2998)
+![image](https://github.com/user-attachments/assets/2c994260-6d06-4563-8d3e-eef461555e80)  
+![image](https://github.com/user-attachments/assets/a005c746-637e-4647-932b-d56a9fcc2998)  
 
 ## Сравнение методов генерации документации: javadoc vs. Maven
 
@@ -121,14 +127,14 @@ mvn javadoc:javadoc
 
 В конечном счете, выбор между `javadoc` и Maven зависит от размера и сложности вашего проекта, а также ваших потребностей в автоматизации и контроле. Если автоматизация является приоритетом, а проект использует Maven, использование `maven-javadoc-plugin` является предпочтительным выбором.
 
-Ссылки на репозитории
-https://github.com/slavndn/sampleproject
-https://github.com/slavndn/javadoc
-https://github.com/slavndn/maven
+## Ссылки на репозитории
+[https://github.com/slavndn/sampleproject](https://github.com/slavndn/sampleproject)
+[https://github.com/slavndn/javadoc](https://github.com/slavndn/javadoc)
+[https://github.com/slavndn/maven](https://github.com/slavndn/maven)
 
-Ссылки на опубликованную документацию на GitHub Pages.
-https://slavndn.github.io/sampleproject/
-https://slavndn.github.io/javadoc/
-https://slavndn.github.io/maven/
+## Ссылки на опубликованную документацию на GitHub Pages.
+[https://slavndn.github.io/sampleproject/](https://slavndn.github.io/sampleproject)
+[https://slavndn.github.io/javadoc/](https://slavndn.github.io/javadoc/)
+[https://slavndn.github.io/maven/](https://slavndn.github.io/maven/)
 
 
